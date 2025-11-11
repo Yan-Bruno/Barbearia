@@ -11,10 +11,11 @@
     "prisma:generate": "dotenv -- npx prisma generate",
     "prisma:migrate": "dotenv -- npx prisma migrate dev",
     "prisma:push": "dotenv -- npx prisma db push",
-    "prisma:studio": "dotenv -- npx prisma studio"
+    "prisma:studio": "dotenv -- npx prisma studio",
+    "prisma:seed": "dotenv -- tsx prisma/seed.ts"
   },
   "dependencies": {
-    "@prisma/client": "6.18.0",
+    "@prisma/client": "6.19.0",
     "dotenv": "17.2.3",
     "next": "16.0.1",
     "prisma": "6.18.0",
@@ -32,6 +33,7 @@
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "0.7.1",
     "tailwindcss": "^4",
+    "tsx": "4.20.6",
     "typescript": "^5"
   }
 }
