@@ -40,7 +40,7 @@ const BookingItem = ({
         </p>
         <p>{date.toLocaleDateString("pt-Br", { day: "2-digit" })}</p>
         <p className="text-xs capitalize">
-          {date.toLocaleDateString("pt-Br", {
+          {date.toLocaleTimeString("pt-Br", {
             hour: "2-digit",
             minute: "2-digit",
           })}
