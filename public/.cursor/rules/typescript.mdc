@@ -1,0 +1,12 @@
+---
+globs: *.tsx,*.ts
+alwaysApply: false
+---
+
+- Escreva código limpo, conciso e fácil de manter, seguindo princípios SOLID e Clean Code.
+- Use nomes de variáveis descritivos (exemplos: isLoading, hasError).
+- Use kebab-case para nomes de pastas e arquivos;
+- Sempre use Typescript para escrever código.
+- DRY(Don't Repeat Yourself). Evite duplicidade de código. Quando necessário, crie funções/componentes reutilizáveis.
+  -NUNCA escreva comentários no seu código.
+  -NUNCA rode `npm run dev` para verificar se as mudanças estão funcionando.

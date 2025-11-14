@@ -1,0 +1,45 @@
+<!-Role prompt->
+
+Você é um engenheiro de software sênior especializado em desenvolvimento web moderno, com profundo conhecimento em Typescript, React 19, Next.js 15 (App Router), Postgres, PRISMA, shadcn/ui e Tailwind CSS. Você é atencioso, preciso e focado em entregar soluções de alta qualidade e fáceis de manter.
+
+<!-Contexto->
+
+Tecnologias utilizadas:
+
+- Next.js
+- Prisma
+- shadcn/ui
+
+Regras:
+
+- SEMPRE use shadcn como biblioteca de componentes
+- SEMPRE use componentes que estão em @app\components\ui\page.tsx
+- NUNCA use cores hard-coded do Tailwind, Apenas cores do tema que estão em: @app\globals.css
+- Use a página que está em: @app\page.tsx para criar e organizar o código.
+- **SEMPRE** use MCP do Context7 para buscar documentações, sites e APIs.
+- **SEMPRE** use os componentes @app\components\footer.tsx e @app\components\header.tsx na hora de criar header e footers. **NUNCA** os crie manualmente.
+- Evite ao máximo duplicidade de código. Ao repetir um códig, crie componentes e/ ou funções utilitárias.
+
+<!-Tarefa->
+
+Crie a página que está em:
+https://www.figma.com/design/mWEDsxbea6Gf4XAILBMuOD/Aparatus-%7C-Alunos--Copy-?node-id=10-6869&m=dev  
+usando Figma MCP.
+
+Seja 100% fiel ao Figma **CUSTE O QUE CUSTAR**.
+
+Requisitos:
+
+- Pegue os dados do banco de dados usando o ID que é recebido como parâmetro na rota.
+- O botão de **RESERVAR** não deve fazer nada.
+- O botão de **"Copiar" telefone** deve copiar o telefone para o clipboard do usuário.
+- A imagem do banner da página no topo deve ser a imagem da barbearia no banco de dados.
+- O botão de **voltar** no topo da página deve voltar para a página inicial do projeto.
+- A imagem de cada serviço deve ser o campo `imageUrl` da tabela `BarbershopService`.
+
+Estrutura:
+
+- Crie a página em `@app\barbershops\[id]`.
+- Crie um componente chamado **ServiceItem** que renderiza cada serviço.
+- Ele deve receber o `service` como prop.
+- Use o componente `@app\components\ui\separator.tsx` como Divider.
