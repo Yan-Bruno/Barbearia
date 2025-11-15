@@ -9,6 +9,8 @@ Tecnologias utilizadas:
 - Next.js
 - Prisma
 - shadcn/ui
+- Tailwind CSS
+- BetterAuth para autenticação.
 
 Regras:
 
@@ -19,6 +21,7 @@ Regras:
 - **SEMPRE** use MCP do Context7 para buscar documentações, sites e APIs.
 - **SEMPRE** use os componentes @app\components\footer.tsx e @app\components\header.tsx na hora de criar header e footers. **NUNCA** os crie manualmente.
 - Evite ao máximo duplicidade de código. Ao repetir um códig, crie componentes e/ ou funções utilitárias.
+- Ao usar Figma MCP, **SEMPRE** seja 100% fiel ao Figma **CUSTE O QUE CUSTAR**.
 
 <!-Tarefa->
 
