@@ -1,7 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { notFound } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import { ChevronLeft, Phone } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import { Separator } from "@/app/components/ui/separator";
 import { PageContainer } from "@/app/components/ui/page";
@@ -9,7 +10,6 @@ import { PageSection } from "@/app/components/ui/page";
 import { PageSectionTitle } from "@/app/components/ui/page";
 import { ServiceItem } from "./components/service-item";
 import { CopyPhoneButton } from "./components/copy-phone-button";
-import { ChevronLeft, Phone } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -101,7 +101,11 @@ const BarbershopPage = async ({ params }: PageProps) => {
             <PageSectionTitle>SERVIÇOS</PageSectionTitle>
             <div className="flex flex-col gap-3">
               {barbershop.services.map((service) => (
-                <ServiceItem key={service.id} service={service} />
+                <ServiceItem
+                  key={service.id}
+                  service={service}
+                  barbershop={barbershop}
+                />
               ))}
             </div>
           </PageSection>
