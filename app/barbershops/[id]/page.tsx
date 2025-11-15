@@ -112,9 +112,9 @@ const BarbershopPage = async ({ params }: PageProps) => {
           <PageSection>
             <PageSectionTitle>CONTATO</PageSectionTitle>
             <div className="flex flex-col gap-4">
-              {barbershop.phones.map((phone) => (
+              {barbershop.phones.map((phone, index) => (
                 <div
-                  key={phone}
+                  key={`${phone}-${index}`}
                   className="relative flex w-full shrink-0 items-center justify-between"
                 >
                   <div className="relative flex shrink-0 items-center gap-2.5">

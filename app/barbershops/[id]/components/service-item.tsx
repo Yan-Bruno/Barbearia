@@ -20,6 +20,7 @@ export function ServiceItem({ service }: ServiceItemProps) {
           src={service.imageUrl}
           alt={service.name}
           fill
+          sizes="110px"
           className="rounded-[10px] object-cover"
         />
       </div>

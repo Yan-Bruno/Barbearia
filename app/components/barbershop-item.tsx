@@ -17,6 +17,7 @@ const BarbershopItem = ({ barbershop }: BarbershopItemProps) => {
         src={barbershop.imageUrl}
         alt={barbershop.name}
         fill
+        sizes="(max-width: 768px) 100vw, 290px"
         className="rounded-xl object-cover"
       />
 
